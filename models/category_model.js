@@ -1,7 +1,7 @@
 import mongoose from "mongoose"
 
-const category = new mongoose.Schema({
+const schema = new mongoose.Schema({
   name: {type: String, required: true},
 }, {timestamps: true})
 
-export const Category = mongoose.model('category', category)
+export const Category = mongoose.model('category', schema)
