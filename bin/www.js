@@ -1,7 +1,7 @@
 
 import app from '../app.js'
 import debug from 'debug'
-// const logger =  debug('tpr_back:server')
+const logger =  debug('tpr_back:server')
 import http from 'http'
 
 /**
@@ -82,5 +82,5 @@ function onListening() {
   var bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port
-  debug('Listening on ' + bind)
+  logger('Listening on ' + bind)
 }
