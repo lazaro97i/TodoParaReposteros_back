@@ -25,6 +25,28 @@ const controller = {
       console.log(e)
       next()
     }
+  },
+
+  create: async(req, res, next) => {
+
+    const {name, description, photo, price, stock} = req.body
+
+    console.log(name, description, photo, price, stock);
+
+    try{
+      const product = await Product.create({name, description, photo, price, stock})
+      if(product){
+        res.status(201).json({
+          success: true,
+          response: "Created",
+          new_product: product
+        })
+      }
+      console.log(product);
+    }catch(e){
+      console.log(e)
+      next()
+    }
   }
 
 }
