@@ -36,7 +36,7 @@ const controller = {
       if(product){
         res.status(201).json({
           success: true,
-          response: "Created",
+          response: "created",
           new_product: product
         })
       }
@@ -55,7 +55,7 @@ const controller = {
       if(product){
         res.status(200).json({
           success: true,
-          response: 'Product delete',
+          response: 'deleted',
           product_delete: product
         })
       }else{
