@@ -31,8 +31,6 @@ const controller = {
 
     const {name, description, photo, price, stock} = req.body
 
-    console.log(name, description, photo, price, stock);
-
     try{
       const product = await Product.create({name, description, photo, price, stock})
       if(product){
@@ -42,13 +40,35 @@ const controller = {
           new_product: product
         })
       }
-      console.log(product);
+    }catch(e){
+      console.log(e)
+      next()
+    }
+  },
+
+  deleteOne: async(req, res, next) => {
+
+    const { _id } = req.body
+
+    try{
+      const product = await Product.findOneAndDelete({_id})
+      if(product){
+        res.status(200).json({
+          success: true,
+          response: 'Product delete',
+          product_delete: product
+        })
+      }else{
+        res.status(404).json({
+          success: false,
+          response: 'Product not found :('
+        })
+      }
     }catch(e){
       console.log(e)
       next()
     }
   }
-
 }
 
 export default controller
