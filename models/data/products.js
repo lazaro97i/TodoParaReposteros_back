@@ -8,7 +8,7 @@ let products = [
     description: 'asd',
     photo: 'https://gastronomicainternacional.com/wp-content/uploads/2020/05/tecnicas-de-reposteria-2-1024x576.jpg',
     stock: 1,
-    category_id: 'asd',
+    category_id: '646fc35e5d58cc4705ef9661',
     price: 3000
   },
   {
@@ -16,7 +16,7 @@ let products = [
     description: 'asd',
     photo: 'https://csaconsultores.com/wp-content/uploads/2022/09/peligros-alimentarios-en-la-reposteria.png',
     stock: 1,
-    category_id: 'asd',
+    category_id: '646fc35e5d58cc4705ef9660',
     price: 1500
   },
   {
@@ -24,7 +24,7 @@ let products = [
     description: 'asd',
     photo: 'https://mandolina.co/wp-content/uploads/2022/08/Panaderia-y-reposteria-dulce-02.png',
     stock: 1,
-    category_id: 'asd',
+    category_id: '646fc35e5d58cc4705ef9660',
     price: 2000
   },
   {
@@ -32,7 +32,7 @@ let products = [
     description: 'asd',
     photo: 'https://animalgourmet.com/wp-content/uploads/2020/05/reposter%C3%ADa-2-e1590589381790.jpg',
     stock: 1,
-    category_id: 'asd',
+    category_id: '646fc35e5d58cc4705ef9662',
     price: 700
   },
   {
@@ -40,7 +40,7 @@ let products = [
     description: 'asd',
     photo: 'https://enmicasa.com/wp-content/uploads/2017/05/funcion_de_los_ingredientes_en_la_reposteria.jpg',
     stock: 1,
-    category_id: 'asd',
+    category_id: '646fc35e5d58cc4705ef9661',
     price: 500
   },
   {
@@ -48,7 +48,7 @@ let products = [
     description: 'asd',
     photo: 'https://aprende.com/wp-content/uploads/2021/10/curso-online-de-reposteria.jpg',
     stock: 1,
-    category_id: 'asd',
+    category_id: '646fc35e5d58cc4705ef9660',
     price: 4500
   },
 ]
