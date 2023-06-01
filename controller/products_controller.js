@@ -29,10 +29,10 @@ const controller = {
 
   create: async(req, res, next) => {
 
-    const {name, description, photo, price, stock} = req.body
+    const {name, description, category_id, photo, price, stock} = req.body
 
     try{
-      const product = await Product.create({name, description, photo, price, stock})
+      const product = await Product.create({name, description, category_id, photo, price, stock})
       if(product){
         res.status(201).json({
           success: true,
